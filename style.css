@@ -1,0 +1,461 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.main{
+    background-image:  linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),url(img/img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+}
+
+header{
+    background: transparent;
+    height: 80px;
+    width: 100%;
+}
+
+.navbar .logo img{
+    padding: 10px 10px;
+    height: 6rem;
+}
+
+.navbar .logo1 img{
+    height: 5rem;
+    width: 200px;
+    padding: 12px 4px;
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 12px 10px;
+
+}
+
+.navbar ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover{
+    border-bottom: 3px solid gold;
+    transition: 0.2s;
+}
+
+#toggle{
+    display: none;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    font-size: 70px !important;
+    color: gold;
+}
+
+.tittle{
+    margin-top: 20px;
+    font-size: 4rem;
+    font-weight: 30;
+    text-transform: uppercase;
+    color: gold;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.tittle:hover{
+    color: transparent;
+    -webkit-text-stroke: 2px gold;
+    transition: 0.2s;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    padding: 0 200px;
+}
+
+.button{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 30;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px 20px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.button span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+.button::after {
+	content: "";
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: calc(-100% - 80px);
+	border-bottom: 80px solid rgb(0, 0, 0);
+	border-right: 80px solid transparent;
+	transition: .4s ease-in-out all;
+}
+
+.button:hover{
+    border-color: gold;
+}
+
+.button:hover::after {
+	left: 0;
+}
+
+.socialmedia {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: gold;
+    box-shadow:  0 0 20px gold;
+}
+
+.icon:hover:nth-child(2) {
+    background-color: gold;
+    box-shadow:  0 0 20px gold;
+}
+
+.icon:hover:nth-child(3) {
+    background-color: gold;
+    box-shadow: 0 0 20px gold ;
+}
+
+.icon:hover:nth-child(4) {
+    background-color: gold;
+    box-shadow:  0 0 20px gold;
+}
+
+.icon i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.7rem;
+}
+
+svg circle {
+    stroke-dasharray: 150;
+    transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+    stroke-dasharray: 220;
+}
+
+.services{
+    display: grid;
+    background-color: rgb(36, 36, 36);
+    box-shadow: 0px 0px 30px 10px black;
+}
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    margin: 80px 80px;
+}
+
+.services .box-container .box{
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    width: 350px;
+    height: 400px;
+    background-color: rgb(27, 27, 27);
+    border-radius: 20px;
+    border: 3px solid gold;
+}
+
+.services .box-container .box img{
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    transition: 0.3s linear;
+
+}
+
+.services .box-container .box p{
+    font-size: 20px;
+    place-items: center;
+    display: grid;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.services .box-container .box a{
+    color: gold;
+    width: 100px;
+    height: 40px;
+    display: grid;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    place-items: center;
+    font-size: 17px;
+    transition: 1s;
+}
+
+.services .box-container .box img:hover{
+    height: 220px;
+    width: 340px;
+    box-shadow:  0 0 50px gold;
+    cursor: pointer;
+}
+
+.services .box-container .box a:hover{
+    background-color: black;
+    color: gold;
+    width: 200px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    border: 2px solid gold;
+}
+
+.contact{
+    background-color: rgb(71, 71, 71);
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    box-shadow: 0px 0px 40px black;
+}
+
+.box-contact{
+    width: 600px;
+    height: 350px;
+    display: grid;
+    gap: 20px;
+    grid-auto-columns: 100%;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px  black;
+    margin: auto
+}
+
+.contact-h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0px 0px 5px #29323c;
+}
+
+.contact-input{
+    margin: 0px 20px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    caret-color: gold;
+}
+
+.contact-textarea{
+    font-size: 16px;
+    padding: 20px 10px;
+    margin: 5px 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    resize: none;
+}
+
+.contact-buttom{
+    margin: 5px 200px;
+    padding: 6px 10px;
+    cursor: pointer;
+    color: gold;
+    background-color: rgb(36, 36, 36);
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.contact-buttom:hover{
+    background-color: black;
+    color: gold;
+    margin: 5px 40px;
+    border: 2px solid gold;
+    padding: 6px 40px;
+    transition: 1s;
+}
+
+.contact-input:focus,
+.contact-textarea:focus{
+    box-shadow:0px 0px 10px gold;
+}
+
+#map{
+    margin: 80px 0 0 80px;
+    border-radius: 20px;
+    width: 500px;
+    height: 340px;
+}
+
+@media screen and (min-width:817px) {
+    .navbar ul{
+        display: block !important;
+    }
+
+    #toggle{
+        display: none !important;
+    }
+
+    #closemenu{
+        display: none !important;
+    }
+}
+
+
+@media screen and (max-width:816px){
+
+    .navbar .logo img{
+        padding: 10px 10px;
+        height: 5rem;
+    }
+
+    .navbar .logo1 img{
+        height: 4rem;
+        width: 150px;
+        padding: 12px 4px;
+    }
+    
+
+    .services .box-container{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(3,1fr);
+        place-items: center;
+        margin: 30px 10px; 
+    }
+
+    .services .box-container .box{
+        display: grid;
+        place-items: center;
+    }
+
+    .socialmedia{
+        display: flex;
+        width: 100%;
+    }
+
+    .contact{
+        width: 100%;
+    }
+
+    .box-contact{
+        width: 100%;
+    }
+
+    .contact-buttom{
+        margin: 5px 100px;
+    } 
+
+    .navbar ul{
+        display: none;
+        flex-direction: column;
+        width: 60%;
+        height: 90vh;
+        background: black;
+        border-radius: 20px;
+        position: absolute;
+        z-index: 3;
+        right: -5%;
+        text-align: center;
+        border: 2px solid gold;
+        transition: all .5s;
+    }
+
+    .navbar ul li{
+        margin-top: 40px;
+    }
+
+    .text{
+        padding: 0 10px;
+    }
+
+    .icon{
+        margin: 10px;
+    }
+    
+    #toggle{
+        display: block;
+        float: right;
+        margin: 20px 20px;
+    }
+
+    #closemenu{
+        float: right;
+        margin: 20px 20px;
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #map{
+        margin: 20px auto;
+        width: 80%;
+        border-radius: 20px;
+    }
+
+
+}
+
+@media (max-width:450px){
+
+    .socialmedia{
+        margin-top: -50px;
+    }
+
+
+}
